@@ -68,7 +68,7 @@ ax.set_aspect("equal")
 
 # Generate items Note;  The variables of some items need ',' to use set parameters.
 tx_step = ax.text(x_min, y_max * 0.8, ' Step=' + str(0) + ',k=' + str(0) + ',omega=' + str(0) + '/step')
-x = np.linspace(0, x_max, 100)
+x = np.linspace(0, x_max, 500)
 y = np.sin(k0 * x * math.pi - omega0 * 0)     # sin(kx - omega*t) Note: math.pi for adjustment x axis as x * pi
 sin_curve, = ax.plot(x, y, linestyle='-')
 circle = patches.Circle(xy=(0., 0.), radius=1, fill=False)
