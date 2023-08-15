@@ -19,7 +19,7 @@ def change_om(value):
 
 
 def switch():
-    global is_play
+    global on_play
     if on_play:
         on_play = False
     else:
@@ -28,7 +28,7 @@ def switch():
 
 def update(f):
     global tx_step, sin_curve, line1, line2, tx_omega_t, tx_v, ann_v, line3, dot
-    if is_play:
+    if on_play:
         # Update items
         # Step
         tx_step.set_text(' Step=' + str(f) + ',k=' + str(k) + ',omega=' + str(omega) + '/step')
@@ -63,7 +63,7 @@ y_max = 1.5
 k = 1.
 omega = 0.1
 
-is_play = False
+on_play = False
 
 # Generate figure and axes
 fig = Figure()
