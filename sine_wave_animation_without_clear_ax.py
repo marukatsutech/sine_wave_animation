@@ -90,5 +90,5 @@ dot = patches.Circle(xy=(0, 0.), radius=0.05, color='red')
 ax.add_patch(dot)
 
 # Draw animation
-anim = animation.FuncAnimation(fig, update, interval=100)
+anim = animation.FuncAnimation(fig, update, interval=100, save_count=100)
 plt.show()
